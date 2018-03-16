@@ -1,0 +1,69 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+    /*Using Google Fonts*/
+
+
+body {
+    font-family: 'Annie Use Your Telescope';
+    font-size: 22px;
+}
+
+    /*Styling Home Page & Pics*/
+div.jumbotron {
+    background-image: url('images/officialskipper.jpg');
+    background-size: contain 50px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-color: #f097c4;
+    color: #000000;
+}
+
+}
+div#skipperdrawing.col-md-4 {
+    background-image: url('images/skipperdrawing.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+div#viewclothes.col-md-4 {
+    background-image: url('images/wardrobe2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    height: 150px;
+    text-align:left;
+}
+div#viewoutfits.col-md-4 {
+    background-image: url('images/anniversaryskipper.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    height: 150px;
+}
+footer{
+    text-align:center;
+}
+
