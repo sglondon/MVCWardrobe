@@ -1,4 +1,6 @@
-﻿body {
+﻿/*Styling for Bottoms*/
+
+body {
     background-image: url('images/bottomsbackground.jpg');
     background-size: cover;
 }

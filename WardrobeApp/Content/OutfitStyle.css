@@ -1,4 +1,6 @@
-﻿body {
+﻿/*Styling for Outfits*/
+
+body {
     
 }
 
@@ -28,6 +30,3 @@ p{
     text-align:center;
 }
 
-td#pic{
- background-image: url('images/bunchofskippers.jpg');  
-}
