@@ -40,7 +40,7 @@ div.jumbotron {
     color: #000000;
 }
 
-}
+
 div#skipperdrawing.col-md-4 {
     background-image: url('images/skipperdrawing.jpg');
     background-size: contain;
@@ -65,5 +65,21 @@ div#viewoutfits.col-md-4 {
 }
 footer{
     text-align:center;
+    font-size:large;
 }
 
+/*Modify picture displays height & width*/
+
+img{
+    margin-top:10px;
+    height:175px;
+    width:175px;
+    
+}
+div.card-header{
+    color:black;
+    text-align:center;
+}
+p.align{
+    text-align:right;
+}

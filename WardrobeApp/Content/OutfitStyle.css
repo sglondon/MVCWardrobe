@@ -1,0 +1,33 @@
+﻿body {
+    
+}
+
+div.container.body-content {
+    background-image: url('images/skipperbluedress.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    height:150px;
+}
+
+div.thumbnail {
+    justify-content: center;
+    background-color: #ecdb3c
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold
+}
+
+a {
+    color: black;
+}
+
+p{
+    text-align:center;
+}
+
+td#pic{
+ background-image: url('images/bunchofskippers.jpg');  
+}

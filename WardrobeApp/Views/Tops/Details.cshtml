@@ -1,58 +1,46 @@
 ﻿@model WardrobeApp.Models.Top
-
+<link href="~/Content/TopDetStyle.css" rel="stylesheet" />
 @{
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Top Details</h2>
 
 <div>
-    <h4>Top</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.TopName)
-        </dt>
+    <div class="card border-primary mb-3" width:75px;>
 
-        <dd>
-            @Html.DisplayFor(model => model.TopName)
-        </dd>
+        <div class="card-header">@Html.DisplayFor(model => model.TopName)</div>
+        <div class="card-body text-primary">
+            <h3 class="card-title"></h3>
+            <img src="@Html.DisplayFor(model => model.TopPhoto)">
+            <p class="card-text">Color:  @Html.DisplayFor(model => model.TopColor)</p>
+            <p class="card-text">Season:  @Html.DisplayFor(model => model.TopSeason) </p>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TopPhoto)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TopPhoto)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TopColor)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TopColor)
-        </dd>
+            <div class="card-footer">
+                Occasion:  @Html.DisplayFor(model => model.TopOccasion)
+            </div>
+        </div>
+        <p>
+           
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TopSeason)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TopSeason)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TopOccasion)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TopOccasion)
-        </dd>
 
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+
+
+
+
+
+
+
+
+
+       

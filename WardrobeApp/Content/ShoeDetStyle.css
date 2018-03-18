@@ -1,0 +1,61 @@
+﻿/*Styling for Accessory Details*/
+
+div.card-body {
+    background-color: #9f1c3b;
+    text-align: center;
+    font-size: large;
+}
+
+div.card-header {
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    color:black;
+}
+
+
+
+h3.card-title {
+    font-style: italic;
+    text-align: center;
+}
+
+body {
+    background-image: url('images/shoedets.jpg');
+    background-size: cover;
+}
+
+div.card-header {
+    text-align: center;
+    color: black;
+    font-size: large;
+}
+
+div.card-footer {
+    background-color: white;
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+    color:black;
+}
+
+
+p.card-text {
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+}
+
+h1 {
+    color: black;
+    text-align: left;
+    font-size: larger;
+    font-weight: bold;
+}
+
+a {
+    color:black;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}

@@ -1,58 +1,114 @@
 ﻿@model WardrobeApp.Models.Accessory
-
+<link href="~/Content/AccessDetStyle.css" rel="stylesheet" />
 @{
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Accessory Details</h2>
 
 <div>
-    <h4>Accessory</h4>
+    <div class="card border-primary mb-3" width:75px;>
+
+        <div class="card-header">@Html.DisplayFor(model => model.AccessoryName)</div>
+        <div class="card-body text-primary">
+            <h3 class="card-title"></h3>
+            <img  src="@Html.DisplayFor(model => model.AccessoryPhoto)">
+            <p class="card-text">Color:  @Html.DisplayFor(model => model.AccessoryColor)</p>
+            <p class="card-text">Season:  @Html.DisplayFor(model => model.AccessorySeason) </p>
+
+
+
+
+            <div class="card-footer">
+         Occasion:  @Html.DisplayFor(model => model.AccessoryOccasion)
+          </div>
+        </div>
+
+    </div>
+    <p>
+        
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>
+
+
+
+
+    @*<h4>Accessory</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.AccessoryName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AccessoryName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.AccessoryPhoto)
+            </dt>
+
+            <dd>
+             <img src="@Html.DisplayFor(model => model.AccessoryPhoto)">
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.AccessoryColor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AccessoryColor)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.AccessorySeason)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AccessorySeason)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.AccessoryOccasion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AccessoryOccasion)
+            </dd>
+
+        </dl>*@<h4></h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.AccessoryName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AccessoryName)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.AccessoryPhoto)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AccessoryPhoto)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.AccessoryColor)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AccessoryColor)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.AccessorySeason)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AccessorySeason)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.AccessoryOccasion)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AccessoryOccasion)
         </dd>
 
     </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoryID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+

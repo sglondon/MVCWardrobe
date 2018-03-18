@@ -1,57 +1,37 @@
 ﻿@model IEnumerable<WardrobeApp.Models.Top>
-
+<link href="~/Content/TopStyle.css" rel="stylesheet" />
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 id="tops">Tops</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.TopName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopPhoto)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopColor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopSeason)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopOccasion)
-        </th>
-        <th></th>
-    </tr>
+<div class="row">
+    @foreach (var item in Model)
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopName)
-        </td>
-        <td>
-           <img src="@Html.DisplayFor(modelItem => item.TopPhoto)" />
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopColor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopSeason)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopOccasion)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TopID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TopID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TopID })
-        </td>
-    </tr>
-}
+    {
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <p>@Html.DisplayFor(modelItem => item.TopName)</p>
+                <p><img src="@Html.DisplayFor(modelItem => item.TopPhoto)" /></p>
+            </div>
+            @Html.ActionLink("Edit", "Edit", new { id = item.TopID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.TopID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.TopID })
+        </div>
+            
 
-</table>
+         
+
+
+
+
+
+
+
+            }
+
+            </div>

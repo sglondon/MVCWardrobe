@@ -1,0 +1,60 @@
+﻿/*Styling for Accessory Details*/
+
+div.card-body {
+    background-color: #90c4ff;
+    text-align: center;
+    font-size: large;
+}
+
+div.card-header {
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    color: #0264ec;
+}
+
+
+
+h3.card-title {
+    font-style: italic;
+    text-align: center;
+}
+
+body {
+    background-image: url('images/potentialbackground.jpg');
+    background-size: cover;
+}
+
+div.card-header {
+    text-align: center;
+    color: #0264ec;
+    font-size: large;
+}
+
+div.card-footer {
+    background-color: white;
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+p.card-text {
+    font-size: larger;
+    font-weight: bold;
+    color: #0264ec;
+}
+
+h2 {
+    color: #0264ec;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+a {
+    color: #0264ec;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}

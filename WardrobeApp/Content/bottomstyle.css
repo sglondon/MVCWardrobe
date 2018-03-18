@@ -1,0 +1,20 @@
+﻿body {
+    background-image: url('images/bottomsbackground.jpg');
+    background-size: cover;
+}
+
+div.thumbnail {
+    justify-content: center;
+    background-color: #ecdb3c
+}
+
+h1#bottoms {
+    text-align:center;
+    font-weight:bold
+    
+
+}
+
+a {
+    color: black;
+}

@@ -1,0 +1,18 @@
+﻿body {
+    background-image: url('images/potentialbackground2.jpg');
+    background-size: cover;
+}
+
+div.thumbnail {
+    justify-content: center;
+    background-color: #eab2b8;
+}
+
+h2#shoes {
+    text-align: center;
+    font-weight: bold
+}
+
+a {
+    color: black;
+}

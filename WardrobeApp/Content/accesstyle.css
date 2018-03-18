@@ -1,0 +1,15 @@
+﻿body {
+    background-image: url('images/accbkground2.jpg');
+    background-size: cover;
+}
+div.thumbnail {
+    justify-content:center;
+    background-color: #ecdb3c
+}
+
+h2#accessory {
+    text-align: center;
+}
+a{
+    color:black;
+}
